@@ -34,7 +34,7 @@ app.get("/api/customers", async (req, res) => {
 });
 
 app.listen(port, async () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`AKU ANKKA ${port}`);
 
   await sequelize.authenticate();
   console.log("connection success");
