@@ -26,7 +26,7 @@ const Customer = sequelize.define(
 );
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.get("/api/customers", async (req, res) => {
   const customers = await Customer.findAll();
